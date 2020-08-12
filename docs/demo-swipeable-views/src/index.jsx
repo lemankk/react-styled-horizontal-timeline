@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import HorizontalTimelineContent from './HorizontalTimelineContent';
-import GameInfo from '../resources/content';
+import GameInfo from '../../resources/content';
 
 // Directly importing the minified bootstrap css to avoid all the painful
 // steps it will take otherwise to get it to work.
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   constructor(props) {

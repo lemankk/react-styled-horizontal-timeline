@@ -14,7 +14,7 @@ const rules = [
   {
     test: /\.jsx?$/,
     use: [ 'babel-loader' ],
-    include: [ path.join(process.cwd(), 'demos'), path.join(process.cwd(), 'src/') ]
+    include: [ path.join(process.cwd(), 'docs'), path.join(process.cwd(), 'src/') ]
   },
   // ability to load css files into js files
   {
@@ -53,13 +53,13 @@ module.exports = {
     minimizer: [new UglifyJSPlugin()]
   },
   entry: [
-    path.join(process.cwd(), './demos/demo-swipeable-views/index.js')
+    path.join(process.cwd(), './docs/demo-swipeable-views/src/index.jsx')
   ],
   // If you pass an array - the modules are loaded on startup. The last one is exported.
   output: {
-    path: path.join(process.cwd(), 'build'),
+    path: path.join(process.cwd(), 'docs/demo-swipeable-views/dist'),
     filename: 'all.js',
-    publicPath: '/demos'
+    publicPath: './'
   },
   // Array of file extensions used to resolve modules.
   resolve: {
