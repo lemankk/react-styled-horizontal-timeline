@@ -1,13 +1,13 @@
 import React from "react";
-import { List, ListItem, Button, IconWrapper } from "./styled/ControlBar";
+import { List, ControlBar, Button, IconWrapper } from "./styled/ControlBar";
 
 // icons
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const DefaultBackButtonContent = ({ styles, active = false }) => {
   return (
     <IconWrapper styles={styles} active={active}>
-      <FaAngleLeft />
+      <FaChevronLeft className="icon" />
     </IconWrapper>
   );
 };
@@ -15,7 +15,7 @@ export const DefaultBackButtonContent = ({ styles, active = false }) => {
 export const DefaultForwardButtonContent = ({ styles, active = false }) => {
   return (
     <IconWrapper styles={styles} active={active}>
-      <FaAngleRight />
+      <FaChevronRight className="icon" />
     </IconWrapper>
   );
 };

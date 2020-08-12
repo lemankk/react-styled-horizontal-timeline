@@ -33,7 +33,7 @@ ${({ type, styles }) =>
 ${({ type, styles }) =>
   type === "future" &&
   css`
-    background-color: ${styles.foreground};
+    background-color: ${styles.background};
     border-color: ${styles.outline};
   `}
 `;

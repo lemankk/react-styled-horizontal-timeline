@@ -227,6 +227,7 @@ class Timeline extends React.Component {
           key={Constants.LEFT}
         >
           <ControlButton
+            active={buttonBackEnabled}
             styles={props.styles}
             onClick={() => this.updateSlide(Constants.LEFT)}
           >
@@ -290,6 +291,7 @@ class Timeline extends React.Component {
             key={Constants.RIGHT}
           >    
             <ControlButton
+              active={buttonForwardEnabled}
               styles={props.styles}
               onClick={() => this.updateSlide(Constants.RIGHT)}
             >

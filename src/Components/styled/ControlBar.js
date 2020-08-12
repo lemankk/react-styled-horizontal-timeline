@@ -36,33 +36,36 @@ export const Button = styled.button.attrs({tabIndex: 0, type: "button"})`
   }
 
   &:hover {
+    color: ${({styles}) => styles.outline};
     border-color: ${({styles}) => styles.outline};
   }
 
-  ${(props) =>
-    props.active &&
+  ${({active = false, styles}) =>
+    active &&
     css`
       cursor: pointer;
       &:hover {
-        border-color: ${({styles}) => styles.foreground};
-        color: ${({styles}) => styles.foreground};
+        border-color: ${styles.foreground};
+        color: ${styles.foreground};
       }
     `}
 `;
 Button.displayName = "ControlButton";
 
 export const IconWrapper = styled.span`
+  svg {
   position: absolute;
   left: 0px;
   top: 50%;
   bottom: auto;
-  transform: translateY(-50%);
-  height: 20px;
-  width: 29px;
+  transform: translate(25%, -50%);
+  height: 15px;
+  width: 20px;
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
   fill: ${({active, styles}) =>
     active ? styles.foreground : styles.outline};
+  }
 `;
 IconWrapper.displayName = "ControlButtonIconWrapper";

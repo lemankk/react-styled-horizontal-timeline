@@ -1,6 +1,6 @@
 {
   "name": "react-styled-horizontal-timeline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A horizontal timeline component made using react and styled-components",
   "main": "./dist/react-horizontal-timeline.js",
   "directories": {

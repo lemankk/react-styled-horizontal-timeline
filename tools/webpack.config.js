@@ -11,7 +11,7 @@ const path = require('path');
 
 // entry point of all the deomos
 let entry = {
-  'demo-swipeable-views': path.join(process.cwd(), './demos/demo-swipeable-views/index.js')
+  'demo-swipeable-views': path.join(process.cwd(), './docs/demo-swipeable-views/src/index.jsx')
 };
 
 // array of all the requisite loaders
@@ -19,7 +19,7 @@ const rules = [
   // babel loader to transpile es6/7 with jsx -> es5
   {
     test: /\.jsx?$/,
-    include: [ path.join(process.cwd(), 'demos'), path.join(process.cwd(), 'src') ],
+    include: [ path.join(process.cwd(), 'docs'), path.join(process.cwd(), 'src') ],
     use: [ 'babel-loader' ]
   },
     // ability to load css files into js files
@@ -70,9 +70,9 @@ module.exports = {
   entry: entry,
    // If you pass an array - the modules are loaded on startup. The last one is exported.
   output: {
-    filename: '[name]/all.js',
-    publicPath: '/demos/',
-    path: path.join(process.cwd(), '/demos/')
+    filename: '[name]/built/all.js',
+    publicPath: '/docs/',
+    path: path.join(process.cwd(), '/docs/')
   },
   // Array of file extensions used to resolve modules.
   resolve: {
