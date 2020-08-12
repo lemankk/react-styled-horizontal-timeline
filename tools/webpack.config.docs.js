@@ -57,7 +57,7 @@ module.exports = {
   ],
   // If you pass an array - the modules are loaded on startup. The last one is exported.
   output: {
-    path: path.join(process.cwd(), 'docs/demo-swipeable-views/dist'),
+    path: path.join(process.cwd(), 'docs/demo-swipeable-views/built'),
     filename: 'all.js',
     publicPath: './'
   },
