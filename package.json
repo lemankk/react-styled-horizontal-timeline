@@ -9,9 +9,10 @@
   },
   "scripts": {
     "start": "node tools/server.js",
-    "build": "cross-env NODE_ENV=production webpack --config tools/webpack.config.prod.js",
+    "build:lib": "cross-env NODE_ENV=production webpack --config tools/webpack.config.prod.js",
     "build:docs": "cross-env NODE_ENV=production webpack --config tools/webpack.config.docs.js",
-    "prepublish": "yarn build",
+    "build": "npm run build:docs && npm run build:lib",
+    "prepublish": "npm run build",
     "lint": "./node_modules/.bin/eslint --config tools/lint-config.js src/ docs/demo-swipeable-views/src/HorizontalTimelineConfigurator.jsx",
     "test": "jest"
   },
