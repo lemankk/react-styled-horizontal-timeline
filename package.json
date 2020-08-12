@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A horizontal timeline component made using react and styled-components",
   "main": "./dist/react-horizontal-timeline.js",
+  "directories": {
+    "dist": "./dist",
+    "src": "./src"
+  },
   "scripts": {
     "start": "node tools/server.js",
     "build": "cross-env NODE_ENV=production webpack --config tools/webpack.config.prod.js",
@@ -22,7 +26,7 @@
     "react-motion",
     "react-component"
   ],
-  "author": "Sherub Thakur",
+  "author": "Leman Kwok",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lemankk/react-styled-horizontal-timeline/issues"
