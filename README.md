@@ -5,7 +5,7 @@ A react & styled-component port of the horizontal time-line developed by CodyHou
 
 ## Demo
 
-- Enhanced version [demo](http://lemankk.github.io/react-horizontal-timeline) 
+- Enhanced version [demo](http://lemankk.github.io/react-styled-horizontal-timeline) 
 - Original [demo](http://sherubthakur.github.io/react-horizontal-timeline) 
 
 ## HorizontalTimeline
