@@ -1,0 +1,8 @@
+/spec
+/src
+/tools
+.coveralls.yml
+.travis.yml
+.gitignore
+.index.html
+README.md
